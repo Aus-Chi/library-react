@@ -369,6 +369,7 @@ footer{
 select{
     border-radius: 6px;
     padding: 8px 6px;
+    font-size: 18px;
 }
 
 .origPrice{

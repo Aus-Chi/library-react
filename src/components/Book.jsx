@@ -1,5 +1,5 @@
 
-import React, {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import Rating from './Rating.jsx'
 import Price from './Price.jsx'
 
