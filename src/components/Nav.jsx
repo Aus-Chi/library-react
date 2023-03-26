@@ -2,7 +2,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import logo from '../assets/Library.svg'
 import React, {  Link } from 'react-router-dom'
 
+
+
 function Nav({cart}) {
+
+    let quan = 0;
+
+    cart.forEach((book) => {
+        quan += book.quantity
+    })
+
     return (
        <nav id='nav'>
         <div className="nav__container">
@@ -26,7 +35,7 @@ function Nav({cart}) {
                   <Link to="/cart" className="nav__link">
                         <FontAwesomeIcon icon="shopping-cart" />
                    
-                    <span className="cart__length">{cart.length}</span>
+                    <span className="cart__length">{quan}</span>
                     </Link>
                 </li>
             </ul>
