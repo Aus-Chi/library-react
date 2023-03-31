@@ -651,6 +651,49 @@ hr{
 }
 
 
+/*
+
+SKELETON LOADING
+
+*/
+
+.book-skeleton{
+    width: 293px;
+    height: 410px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.book-skeleton__img--wrapper{
+    width: 200px;
+    height: 300px;
+    background-color: lightgray;
+    border-radius: 6px;
+}
+
+.book-skeleton__title{
+    width: 112px;
+    height: 19px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    background-color: lightgray;
+}
+
+.skeleton-rating{
+    width: 102px;
+    height: 19px;
+    margin-bottom: 12px;
+    background-color: lightgray;
+}
+
+.skeleton-price{
+    width: 49px;
+    height: 19px;
+    background-color: lightgray;
+}
+
 
 
 

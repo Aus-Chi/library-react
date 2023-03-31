@@ -6,6 +6,7 @@ import Footer from './components/Footer.jsx'
 import BookInfo from './pages/BookInfo.jsx'
 import Cart from './pages/Cart.jsx'
 import { useState, useEffect } from 'react'
+import Skeleton from './components/Skeleton.jsx'
 
 function App() {
 
@@ -51,6 +52,7 @@ function App() {
       <Route path="/books" exact element={<Books />} />
       <Route path="/books/:id" exact element={<BookInfo addToCart={addToCart} cart={cart} />} />
       <Route path="/cart" exact element={<Cart cart={cart} quantityUpdated={quantityUpdated} removeItem={removeItem} />} />
+      <Route path="/skeleton" exact element={<Skeleton />} />
       </Routes>
       <Footer />
       </Router>
