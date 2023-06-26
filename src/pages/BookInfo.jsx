@@ -4,9 +4,14 @@ import Rating from '../components/Rating.jsx'
 import Price from '../components/Price.jsx'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Book from '../components/Book.jsx'
+import { useEffect } from 'react'
 
 
 function BookInfo({addToCart, cart}){
+
+    useEffect(() => {
+         window.scrollTo(0,0)
+    }, [])
 
     const { id } = useParams()
 

@@ -1,10 +1,14 @@
 import { books } from '../components/data.js'
 import Book from '../components/Book.jsx'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 function Books(){
 
     const [unsortedBooks, setBooks] = useState(books)
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
 
     function sortBooks(filter){
         

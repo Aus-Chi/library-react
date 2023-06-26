@@ -1,7 +1,12 @@
+import { useEffect } from 'react';
 import EmptyCart from '../assets/empty_cart.svg'
 import {Link} from 'react-router-dom'
 
 function Cart({cart,quantityUpdated, removeItem}){
+
+    useEffect(() => {
+        window.scrollTo(0,0)
+    }, [])
 
     let subTotal = 0;
     function calcSubTotal(){
