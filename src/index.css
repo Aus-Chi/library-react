@@ -110,12 +110,17 @@ nav{
 }
 
 .cart__length{
-    font-size: 11px;
-    padding: 2px 4px;
+    font-size: 10px;
     background-color: red;
-    border-radius: 100%;
+    border-radius: 50px;
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
     color: #FFFFFF;
-    
 }
 
 .nav__link{
@@ -123,6 +128,8 @@ nav{
     color: #7342D6;
     text-decoration: none;
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo{
